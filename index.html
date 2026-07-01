@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta name="theme-color" content="#3B4527" />
+<meta name="color-scheme" content="light" />
+
+<title>WildHearts &amp; OpenMinds — Move in Presence Workshops &amp; Kids Programs</title>
+<meta name="description" content="Move in Presence: a guided 3-hour movement workshop for adults by Reena Giasi. Plus playful Art, Science &amp; Philosophy programs for kids 6–12. Based in The Hague." />
+<link rel="canonical" href="https://wildheartsandopenminds.com/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="WildHearts &amp; OpenMinds" />
+<meta property="og:title" content="WildHearts &amp; OpenMinds — Move in Presence Workshops &amp; Kids Programs" />
+<meta property="og:description" content="A guided 3-hour movement workshop for adults, and playful Art, Science &amp; Philosophy programs for kids 6–12. Created by Reena Giasi in The Hague." />
+<meta property="og:url" content="https://wildheartsandopenminds.com/" />
+<meta property="og:image" content="https://placehold.co/1200x630/3B4527/F7F2E7?text=WildHearts+%26+OpenMinds" />
+<meta property="og:locale" content="en_US" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="WildHearts &amp; OpenMinds — Move in Presence" />
+<meta name="twitter:description" content="A guided 3-hour movement workshop for adults, and playful Art, Science &amp; Philosophy programs for kids 6–12." />
+<meta name="twitter:image" content="https://placehold.co/1200x630/3B4527/F7F2E7?text=WildHearts+%26+OpenMinds" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23F7F2E7' stroke='%233B4527' stroke-width='3'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' fill='%237A3A18' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: '#F7F2E7',
+          creamSoft: '#FCF9F2',
+          forestDark: '#3B4527',
+          forestDeep: '#2C331C',
+          forestLight: '#8FA06B',
+          earth: '#4A3A2C',
+          fireDeep: '#7A3A18',
+          fireSoft: '#C1602B',
+          water: '#A9C4C9',
+        },
+        fontFamily: {
+          display: ['Cormorant', 'serif'],
+          body: ['"Work Sans"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "WildHearts & OpenMinds",
+  "url": "https://wildheartsandopenminds.com/",
+  "email": "wildheartsandopenminds@gmail.com",
+  "telephone": "+31634096033",
+  "areaServed": { "@type": "City", "name": "The Hague" },
+  "founder": { "@type": "Person", "name": "Reena Giasi" },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Move in Presence",
+        "description": "A guided 3-hour movement workshop for adults to explore feelings, patterns and presence.",
+        "audience": { "@type": "PeopleAudience", "suggestedMinAge": 18 }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Kids Workshops — Art, Science & Technology, Philosophy",
+        "description": "Hands-on creative, scientific and philosophical workshops for primary-school children.",
+        "audience": { "@type": "PeopleAudience", "suggestedMinAge": 6, "suggestedMaxAge": 12 }
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root { color-scheme: light; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+  body { font-family: 'Work Sans', sans-serif; background: #F7F2E7; color: #4A3A2C; }
+  .font-display { font-family: 'Cormorant', serif; }
+
+  .grain { position: absolute; inset: 0; pointer-events: none; opacity: 0.18; mix-blend-mode: overlay; }
+
+  @keyframes spin-slow { to { transform: rotate(360deg); } }
+  .circle-motif { animation: spin-slow 60s linear infinite; transform-origin: center; }
+
+  a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+    outline: 2px solid #7A3A18;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .skip-link { position: absolute; left: 1rem; top: -4rem; transition: top 0.2s ease; z-index: 100; }
+  .skip-link:focus { top: 1rem; }
+
+  header.is-scrolled .nav-bg { background-color: rgba(247, 242, 231, 0.92); backdrop-filter: blur(8px); box-shadow: 0 1px 0 rgba(74,58,44,0.08); }
+  header.is-scrolled .nav-text { color: #3B4527; }
+  header:not(.is-scrolled) .nav-text { color: #F7F2E7; }
+
+  .mobile-panel { transition: opacity 0.25s ease, transform 0.25s ease; }
+  .mobile-panel[data-open="false"] { opacity: 0; transform: translateY(-8px); pointer-events: none; }
+  .mobile-panel[data-open="true"] { opacity: 1; transform: translateY(0); pointer-events: auto; }
+
+  /* Language toggle */
+  .lang-btn { opacity: 0.42; font-weight: 500; transition: opacity 0.2s; }
+  .lang-btn.active { opacity: 1; font-weight: 700; }
+  .lang-btn:hover { opacity: 0.8; }
+</style>
+</head>
+
+<body class="bg-cream text-earth antialiased">
+
+<a href="#main" class="skip-link bg-forestDark text-cream px-4 py-2 rounded font-body text-sm">Skip to content</a>
+
+<!-- ===== HEADER / NAV ===== -->
+<header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+  <div class="nav-bg transition-colors duration-300">
+    <nav aria-label="Primary" class="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
+
+      <a href="#home" class="nav-text font-display text-xl md:text-2xl tracking-wide transition-colors duration-300">
+        WildHearts <span class="italic font-light">&amp;</span> OpenMinds
+      </a>
+
+      <ul class="hidden lg:flex items-center gap-8 font-body text-sm uppercase tracking-wider nav-text transition-colors duration-300">
+        <li><a href="#move-in-presence" class="hover:text-fireSoft transition-colors duration-200">Move in Presence</a></li>
+        <li><a href="#kids" class="hover:text-fireSoft transition-colors duration-200" data-i18n="nav.kids">For Kids</a></li>
+        <li><a href="#about" class="hover:text-fireSoft transition-colors duration-200" data-i18n="nav.about">About</a></li>
+      </ul>
+
+      <div class="hidden lg:flex items-center gap-5">
+        <!-- Language toggle desktop -->
+        <div class="flex items-center gap-1 nav-text font-body text-xs uppercase tracking-[0.15em] transition-colors duration-300" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
+          <span class="opacity-30 select-none">/</span>
+          <button class="lang-btn" data-lang="nl" aria-label="Schakel naar Nederlands">NL</button>
+        </div>
+        <a href="#contact" class="inline-flex items-center gap-2 bg-fireDeep text-creamSoft font-body text-sm font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full shadow-[0_10px_25px_-8px_rgba(122,58,24,0.55)] hover:bg-forestDark hover:shadow-[0_10px_25px_-8px_rgba(59,69,39,0.55)] active:scale-95 transition-all duration-200" data-i18n="nav.cta">Get in Touch</a>
+      </div>
+
+      <div class="flex lg:hidden items-center gap-4 nav-text transition-colors duration-300">
+        <!-- Language toggle mobile (compact) -->
+        <div class="flex items-center gap-1 font-body text-xs uppercase tracking-[0.15em]" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
+          <span class="opacity-30 select-none">/</span>
+          <button class="lang-btn" data-lang="nl" aria-label="Schakel naar Nederlands">NL</button>
+        </div>
+        <button id="menuToggle" type="button" aria-controls="mobilePanel" aria-expanded="false" aria-label="Open menu">
+          <svg id="menuIconOpen" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg id="menuIconClose" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+
+    </nav>
+  </div>
+
+  <div id="mobilePanel" data-open="false" class="mobile-panel lg:hidden bg-creamSoft border-t border-forestDark/10 shadow-[0_25px_40px_-15px_rgba(44,51,28,0.25)]">
+    <ul class="flex flex-col px-6 py-6 gap-5 font-body text-base text-forestDeep">
+      <li><a href="#move-in-presence" class="block py-1">Move in Presence</a></li>
+      <li><a href="#kids" class="block py-1" data-i18n="nav.kids">For Kids</a></li>
+      <li><a href="#about" class="block py-1" data-i18n="nav.about">About</a></li>
+      <li><a href="#contact" class="inline-flex items-center gap-2 bg-fireDeep text-creamSoft font-semibold uppercase tracking-wider text-sm px-5 py-2.5 rounded-full w-fit mt-2" data-i18n="nav.cta">Get in Touch</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section id="home" aria-labelledby="hero-heading" class="relative overflow-hidden bg-forestDeep text-creamSoft min-h-screen flex items-center">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(143,160,107,0.35),transparent_55%),radial-gradient(circle_at_85%_75%,rgba(122,58,24,0.30),transparent_50%),linear-gradient(160deg,#2C331C,#3B4527_60%,#2C331C)]"></div>
+    <div class="grain" aria-hidden="true" style="background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E&quot;)"></div>
+
+    <svg class="circle-motif hidden md:block absolute -right-24 top-1/2 -translate-y-1/2 opacity-40" width="620" height="620" viewBox="0 0 620 620" fill="none" aria-hidden="true">
+      <circle cx="310" cy="310" r="300" stroke="#F7F2E7" stroke-width="1"/>
+    </svg>
+
+    <div class="relative max-w-6xl mx-auto px-6 md:px-10 pt-28 pb-20 grid md:grid-cols-2 gap-12 items-center w-full">
+      <div>
+        <p class="font-body text-xs md:text-sm uppercase tracking-[0.3em] text-water mb-5" data-i18n="hero.eyebrow">WildHearts &amp; OpenMinds presents</p>
+        <h1 id="hero-heading" class="font-display font-light uppercase leading-[0.95] tracking-wide text-[3.2rem] sm:text-7xl lg:text-8xl">
+          Move in<br />Presence
+        </h1>
+        <p class="mt-6 font-body text-base md:text-lg text-creamSoft/85 max-w-md leading-relaxed" data-i18n="hero.subhead">
+          A three-hour guided movement journey into your feelings, patterns, and presence — right here, right now.
+        </p>
+        <div class="mt-9 flex flex-wrap items-center gap-4">
+          <a href="#contact" class="inline-flex items-center gap-2 bg-fireDeep text-creamSoft font-body font-semibold uppercase tracking-wider text-sm px-7 py-3.5 rounded-full shadow-[0_15px_35px_-10px_rgba(122,58,24,0.6)] hover:bg-fireSoft hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-200" data-i18n="hero.cta1">Reserve Your Spot</a>
+          <a href="#about" class="inline-flex items-center gap-2 font-body text-sm uppercase tracking-wider text-creamSoft/90 border border-creamSoft/40 px-7 py-3.5 rounded-full hover:bg-creamSoft/10 hover:border-creamSoft active:scale-95 transition-all duration-200" data-i18n="hero.cta2">Meet Reena</a>
+        </div>
+      </div>
+
+      <div class="relative mx-auto md:mx-0 md:ml-auto">
+        <svg class="circle-motif absolute -inset-6 opacity-70" width="100%" height="100%" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+          <circle cx="200" cy="200" r="195" stroke="#F7F2E7" stroke-width="1"/>
+        </svg>
+        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] ring-1 ring-creamSoft/20">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='640'%3E%3Crect width='100%25' height='100%25' fill='%233B4527'/%3E%3Ctext x='50%25' y='50%25' font-family='Georgia,serif' font-size='30' fill='%23F7F2E7' text-anchor='middle' dominant-baseline='middle'%3EReena %E2%80%94 Movement%3C/text%3E%3C/svg%3E" alt="Placeholder photo of Reena Giasi in motion during a Move in Presence session" class="w-full h-full object-cover" width="640" height="640" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forestDeep/60 via-transparent to-transparent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" aria-labelledby="about-heading" class="relative py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-[0.85fr_1.15fr] gap-14 items-center">
+      <div class="relative mx-auto md:mx-0 order-2 md:order-1">
+        <svg class="absolute -inset-5 opacity-60" width="100%" height="100%" viewBox="0 0 360 360" fill="none" aria-hidden="true">
+          <circle cx="180" cy="180" r="175" stroke="#C1602B" stroke-width="1"/>
+        </svg>
+        <div class="relative w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden shadow-[0_25px_50px_-15px_rgba(74,58,44,0.35),0_8px_20px_-8px_rgba(122,58,24,0.2)]">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='700'%3E%3Crect width='100%25' height='100%25' fill='%238FA06B'/%3E%3Ctext x='50%25' y='50%25' font-family='Georgia,serif' font-size='32' fill='%232C331C' text-anchor='middle' dominant-baseline='middle'%3EReena %E2%80%94 Portrait%3C/text%3E%3C/svg%3E" alt="Placeholder portrait photo of Reena Giasi" class="w-full h-full object-cover" width="700" height="700" />
+        </div>
+      </div>
+
+      <div class="order-1 md:order-2">
+        <p class="font-body text-xs uppercase tracking-[0.3em] text-fireDeep mb-4" data-i18n="about.eyebrow">Who I Am</p>
+        <h2 id="about-heading" class="font-display font-light text-4xl sm:text-5xl text-forestDeep mb-6">Reena Giasi</h2>
+        <p class="font-body text-base md:text-[1.05rem] leading-[1.7] text-earth mb-5" data-i18n="about.p1">
+          Three years ago I stepped into education — working as a substitute teacher across schools in The Hague, from the youngest classes to the oldest. My curiosity about movement and psychology grew into something more: workshops that bring children, school teams, and families closer to themselves, and closer to each other.
+        </p>
+        <p class="font-body text-base md:text-[1.05rem] leading-[1.7] text-earth" data-i18n-html="about.p2">
+          <em class="font-display not-italic font-medium text-forestDeep">Move in Presence</em> is where that work lives for adults — playful, experience-led sessions that build rest, focus, and connection, on the mat and far beyond it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MOVE IN PRESENCE (FLAGSHIP) ===== -->
+  <section id="move-in-presence" aria-labelledby="mip-heading" class="relative py-24 md:py-32 bg-creamSoft border-y border-forestDark/10">
+    <div class="max-w-6xl mx-auto px-6 md:px-10">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <p class="font-body text-xs uppercase tracking-[0.3em] text-fireDeep mb-4" data-i18n="mip.eyebrow">The Flagship Workshop</p>
+        <h2 id="mip-heading" class="font-display font-light uppercase text-4xl sm:text-6xl tracking-wide text-forestDeep">Move in Presence</h2>
+        <p class="mt-5 font-display italic text-xl sm:text-2xl text-fireDeep" data-i18n="mip.lead">Not a class. Not therapy. A guided return to yourself.</p>
+      </div>
+
+      <div class="grid md:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+        <div class="relative order-2 md:order-1">
+          <div class="relative rounded-[2rem] overflow-hidden shadow-[0_30px_55px_-18px_rgba(74,58,44,0.4),0_10px_25px_-10px_rgba(193,96,43,0.25)]">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23C1602B'/%3E%3Ctext x='50%25' y='50%25' font-family='Georgia,serif' font-size='34' fill='%23FCF9F2' text-anchor='middle' dominant-baseline='middle'%3EWorkshop Photo%3C/text%3E%3C/svg%3E" alt="Placeholder photo from a Move in Presence group workshop session" class="w-full h-auto object-cover" width="900" height="600" />
+            <div class="absolute inset-0 bg-gradient-to-t from-forestDeep/50 via-transparent to-transparent mix-blend-multiply"></div>
+          </div>
+        </div>
+
+        <div class="order-1 md:order-2">
+          <p class="font-body text-base md:text-[1.05rem] leading-[1.7] text-earth mb-8" data-i18n="mip.body">
+            Across three unhurried hours, guided movement opens space to notice the feelings, patterns and behaviours shaping this moment of your life — no experience necessary, just a willingness to show up.
+          </p>
+
+          <dl class="grid grid-cols-2 gap-x-6 gap-y-5 mb-9 font-body text-sm">
+            <div>
+              <dt class="uppercase tracking-wider text-fireDeep text-xs mb-1" data-i18n="mip.dt.duration">Duration</dt>
+              <dd class="text-forestDeep font-medium" data-i18n="mip.dd.duration">3 hours, guided</dd>
+            </div>
+            <div>
+              <dt class="uppercase tracking-wider text-fireDeep text-xs mb-1" data-i18n="mip.dt.who">Who it's for</dt>
+              <dd class="text-forestDeep font-medium" data-i18n="mip.dd.who">Adults, all ages</dd>
+            </div>
+            <div>
+              <dt class="uppercase tracking-wider text-fireDeep text-xs mb-1" data-i18n="mip.dt.format">Format</dt>
+              <dd class="text-forestDeep font-medium" data-i18n="mip.dd.format">In-person, small group</dd>
+            </div>
+            <div>
+              <dt class="uppercase tracking-wider text-fireDeep text-xs mb-1" data-i18n="mip.dt.exp">Experience needed</dt>
+              <dd class="text-forestDeep font-medium" data-i18n="mip.dd.exp">None at all</dd>
+            </div>
+          </dl>
+
+          <a href="#contact" class="inline-flex items-center gap-2 bg-forestDark text-creamSoft font-body font-semibold uppercase tracking-wider text-sm px-7 py-3.5 rounded-full shadow-[0_15px_30px_-10px_rgba(59,69,39,0.5)] hover:bg-fireDeep hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-200" data-i18n="mip.cta">Enquire About the Next Session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOR KIDS ===== -->
+  <section id="kids" aria-labelledby="kids-heading" class="relative py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6 md:px-10">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <p class="font-body text-xs uppercase tracking-[0.3em] text-fireDeep mb-4" data-i18n="kids.eyebrow">For Curious Minds, Ages 6–12</p>
+        <h2 id="kids-heading" class="font-display font-light text-4xl sm:text-5xl text-forestDeep" data-i18n="kids.heading">Workshops for Kids</h2>
+        <p class="mt-5 font-body text-base text-earth/90 leading-relaxed" data-i18n="kids.intro">Hands-on sessions for primary-school kids, built around three pillars.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <article class="group relative bg-creamSoft rounded-2xl p-8 shadow-[0_20px_40px_-18px_rgba(74,58,44,0.25)] hover:shadow-[0_25px_45px_-15px_rgba(193,96,43,0.3)] hover:-translate-y-1 transition-all duration-300">
+          <div class="w-14 h-14 rounded-full bg-fireSoft/15 flex items-center justify-center mb-6" aria-hidden="true">
+            <svg class="w-7 h-7 text-fireDeep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l7-7 3 3-7 7-3-3z"/><path stroke-linecap="round" stroke-linejoin="round" d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18"/><path stroke-linecap="round" stroke-linejoin="round" d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <h3 class="font-display text-2xl text-forestDeep mb-2" data-i18n="kids.art.title">Art</h3>
+          <p class="font-body text-xs uppercase tracking-wider text-fireDeep mb-3" data-i18n="kids.art.sub">Creative thinking &amp; making</p>
+          <p class="font-body text-sm leading-[1.7] text-earth" data-i18n="kids.art.body">Children discover their own visual language and experiment with different materials and techniques.</p>
+        </article>
+
+        <article class="group relative bg-creamSoft rounded-2xl p-8 shadow-[0_20px_40px_-18px_rgba(74,58,44,0.25)] hover:shadow-[0_25px_45px_-15px_rgba(169,196,201,0.45)] hover:-translate-y-1 transition-all duration-300">
+          <div class="w-14 h-14 rounded-full bg-water/30 flex items-center justify-center mb-6" aria-hidden="true">
+            <svg class="w-7 h-7 text-forestDark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3h6M10 3v5.2L4.5 18a1.5 1.5 0 001.3 2.3h12.4a1.5 1.5 0 001.3-2.3L14 8.2V3"/><path stroke-linecap="round" d="M7.5 14.5h9"/></svg>
+          </div>
+          <h3 class="font-display text-2xl text-forestDeep mb-2" data-i18n="kids.science.title">Science &amp; Technology</h3>
+          <p class="font-body text-xs uppercase tracking-wider text-fireDeep mb-3" data-i18n="kids.science.sub">Investigate, build, experiment</p>
+          <p class="font-body text-sm leading-[1.7] text-earth" data-i18n="kids.science.body">A hands-on introduction to the wonderful world of science and technology.</p>
+        </article>
+
+        <article class="group relative bg-creamSoft rounded-2xl p-8 shadow-[0_20px_40px_-18px_rgba(74,58,44,0.25)] hover:shadow-[0_25px_45px_-15px_rgba(143,160,107,0.4)] hover:-translate-y-1 transition-all duration-300 sm:col-span-2 lg:col-span-1">
+          <div class="w-14 h-14 rounded-full bg-forestLight/25 flex items-center justify-center mb-6" aria-hidden="true">
+            <svg class="w-7 h-7 text-forestDark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M9.5 9.2a2.5 2.5 0 114 2c-.7.6-1.5 1-1.5 2.3M12 17h.01"/></svg>
+          </div>
+          <h3 class="font-display text-2xl text-forestDeep mb-2" data-i18n="kids.philosophy.title">Philosophy</h3>
+          <p class="font-body text-xs uppercase tracking-wider text-fireDeep mb-3" data-i18n="kids.philosophy.sub">Big questions, young thinkers</p>
+          <p class="font-body text-sm leading-[1.7] text-earth" data-i18n="kids.philosophy.body">Children learn to reason, listen, and form and express their own ideas with confidence.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section id="why-us" aria-labelledby="why-heading" class="relative py-24 md:py-28 bg-forestDeep text-creamSoft overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_30%,rgba(122,58,24,0.25),transparent_55%),radial-gradient(circle_at_15%_80%,rgba(143,160,107,0.25),transparent_50%)]"></div>
+    <div class="grain" aria-hidden="true" style="background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n2)'/%3E%3C/svg%3E&quot;)"></div>
+    <svg class="circle-motif hidden md:block absolute -left-32 -bottom-32 opacity-30" width="500" height="500" viewBox="0 0 500 500" fill="none" aria-hidden="true">
+      <circle cx="250" cy="250" r="240" stroke="#F7F2E7" stroke-width="1"/>
+    </svg>
+
+    <div class="relative max-w-3xl mx-auto px-6 md:px-10 text-center">
+      <p class="font-body text-xs uppercase tracking-[0.3em] text-water mb-5" data-i18n="why.eyebrow">Why WildHearts &amp; OpenMinds</p>
+      <h2 id="why-heading" class="font-display font-light text-3xl sm:text-5xl leading-tight mb-6" data-i18n="why.heading">Real skills. Real presence. No fluff.</h2>
+      <p class="font-body text-base md:text-lg text-creamSoft/85 leading-[1.7] mb-12" data-i18n="why.body">
+        Every session is built on years in the classroom and a deep belief that movement, curiosity and honest conversation can change how we show up — for ourselves, our kids, and each other.
+      </p>
+      <div class="grid grid-cols-3 gap-6 max-w-lg mx-auto font-body text-xs sm:text-sm uppercase tracking-wider text-creamSoft/80">
+        <div class="border-t border-creamSoft/25 pt-4" data-i18n="why.stat1">Ages 6 to 12</div>
+        <div class="border-t border-creamSoft/25 pt-4" data-i18n="why.stat2">English &amp; Dutch</div>
+        <div class="border-t border-creamSoft/25 pt-4" data-i18n="why.stat3">The Hague &amp; Beyond</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" aria-labelledby="contact-heading" class="relative py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-14 items-center">
+      <div>
+        <h2 id="contact-heading" class="font-display font-light uppercase text-5xl sm:text-7xl text-forestDeep tracking-wide mb-5" data-i18n="contact.heading">Let's Talk</h2>
+        <p class="font-body text-lg text-fireDeep mb-12" data-i18n="contact.sub">We want to hear from you!</p>
+
+        <div class="space-y-9 font-body">
+          <div>
+            <p class="uppercase tracking-wider text-xs text-fireDeep mb-2">Email</p>
+            <a href="mailto:wildheartsandopenminds@gmail.com" class="text-xl sm:text-2xl text-forestDeep hover:text-fireDeep underline decoration-fireSoft/40 underline-offset-4 transition-colors duration-200">wildheartsandopenminds@gmail.com</a>
+          </div>
+          <div>
+            <p class="uppercase tracking-wider text-xs text-fireDeep mb-2" data-i18n="contact.phone">Phone number</p>
+            <a href="tel:+31634096033" class="text-xl sm:text-2xl text-forestDeep hover:text-fireDeep underline decoration-fireSoft/40 underline-offset-4 transition-colors duration-200">06-34096033</a>
+          </div>
+        </div>
+
+        <a href="mailto:wildheartsandopenminds@gmail.com" id="contactCta" class="mt-12 inline-flex items-center gap-2 bg-fireDeep text-creamSoft font-semibold uppercase tracking-wider text-sm px-7 py-3.5 rounded-full shadow-[0_15px_30px_-10px_rgba(122,58,24,0.55)] hover:bg-forestDark hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-200" data-i18n="contact.cta">Send an Enquiry</a>
+      </div>
+
+      <div class="relative mx-auto md:mx-0 md:ml-auto">
+        <svg class="circle-motif absolute -inset-6 opacity-60" width="100%" height="100%" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+          <circle cx="200" cy="200" r="195" stroke="#3B4527" stroke-width="1"/>
+        </svg>
+        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-[0_30px_55px_-15px_rgba(74,58,44,0.4),0_10px_25px_-10px_rgba(122,58,24,0.2)]">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Crect width='100%25' height='100%25' fill='%232C331C'/%3E%3Ctext x='50%25' y='46%25' font-family='Georgia,serif' font-size='34' fill='%23F7F2E7' text-anchor='middle' dominant-baseline='middle'%3ECommunity%3C/text%3E%3Ctext x='50%25' y='56%25' font-family='Georgia,serif' font-size='34' fill='%23F7F2E7' text-anchor='middle' dominant-baseline='middle'%3E%26amp%3B Connection%3C/text%3E%3C/svg%3E" alt="Placeholder photo representing community and connection" class="w-full h-full object-cover" width="800" height="800" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="relative bg-forestDeep text-creamSoft/80 py-14">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center md:items-end justify-between gap-8">
+    <div class="text-center md:text-left">
+      <p class="font-display text-xl text-creamSoft">WildHearts <span class="italic font-light">&amp;</span> OpenMinds</p>
+      <p class="font-body text-xs uppercase tracking-wider mt-2 text-creamSoft/60">Move in Presence — by WildHearts &amp; OpenMinds</p>
+    </div>
+
+    <div class="flex flex-col items-center md:items-end gap-3 font-body text-sm">
+      <a href="mailto:wildheartsandopenminds@gmail.com" class="hover:text-creamSoft transition-colors duration-200">wildheartsandopenminds@gmail.com</a>
+      <div class="flex items-center gap-3 text-xs uppercase tracking-wider">
+        <button class="lang-btn active px-2.5 py-1 rounded-full border border-creamSoft/30 text-creamSoft/80" data-lang="en" aria-label="Switch to English">EN</button>
+        <button class="lang-btn px-2.5 py-1 rounded-full border border-creamSoft/30 text-creamSoft/80" data-lang="nl" aria-label="Schakel naar Nederlands">NL</button>
+      </div>
+      <p class="text-creamSoft/40 mt-2">&copy; <span id="year"></span> WildHearts &amp; OpenMinds. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  /* ── i18n content ── */
+  var content = {
+    en: {
+      nav: { kids: 'For Kids', about: 'About', cta: 'Get in Touch', menuOpen: 'Open menu', menuClose: 'Close menu' },
+      hero: {
+        eyebrow: 'WildHearts & OpenMinds presents',
+        subhead: 'A three-hour guided movement journey into your feelings, patterns, and presence — right here, right now.',
+        cta1: 'Reserve Your Spot',
+        cta2: 'Meet Reena'
+      },
+      about: {
+        eyebrow: 'Who I Am',
+        p1: 'Three years ago I stepped into education — working as a substitute teacher across schools in The Hague, from the youngest classes to the oldest. My curiosity about movement and psychology grew into something more: workshops that bring children, school teams, and families closer to themselves, and closer to each other.',
+        p2: '<em class="font-display not-italic font-medium text-forestDeep">Move in Presence</em> is where that work lives for adults — playful, experience-led sessions that build rest, focus, and connection, on the mat and far beyond it.'
+      },
+      mip: {
+        eyebrow: 'The Flagship Workshop',
+        lead: 'Not a class. Not therapy. A guided return to yourself.',
+        body: 'Across three unhurried hours, guided movement opens space to notice the feelings, patterns and behaviours shaping this moment of your life — no experience necessary, just a willingness to show up.',
+        dt: { duration: 'Duration', who: "Who it's for", format: 'Format', exp: 'Experience needed' },
+        dd: { duration: '3 hours, guided', who: 'Adults, all ages', format: 'In-person, small group', exp: 'None at all' },
+        cta: 'Enquire About the Next Session'
+      },
+      kids: {
+        eyebrow: 'For Curious Minds, Ages 6–12',
+        heading: 'Workshops for Kids',
+        intro: 'Hands-on sessions for primary-school kids, built around three pillars.',
+        art: { title: 'Art', sub: 'Creative thinking & making', body: 'Children discover their own visual language and experiment with different materials and techniques.' },
+        science: { title: 'Science & Technology', sub: 'Investigate, build, experiment', body: 'A hands-on introduction to the wonderful world of science and technology.' },
+        philosophy: { title: 'Philosophy', sub: 'Big questions, young thinkers', body: 'Children learn to reason, listen, and form and express their own ideas with confidence.' }
+      },
+      why: {
+        eyebrow: 'Why WildHearts & OpenMinds',
+        heading: 'Real skills. Real presence. No fluff.',
+        body: 'Every session is built on years in the classroom and a deep belief that movement, curiosity and honest conversation can change how we show up — for ourselves, our kids, and each other.',
+        stat1: 'Ages 6 to 12', stat2: 'English & Dutch', stat3: 'The Hague & Beyond'
+      },
+      contact: { heading: "Let's Talk", sub: 'We want to hear from you!', phone: 'Phone number', cta: 'Send an Enquiry' },
+      footer: { rights: 'All rights reserved.' }
+    },
+    nl: {
+      nav: { kids: 'Voor Kinderen', about: 'Over mij', cta: 'Neem Contact Op', menuOpen: 'Menu openen', menuClose: 'Menu sluiten' },
+      hero: {
+        eyebrow: 'WildHearts & OpenMinds presenteert',
+        subhead: 'Een begeleide bewegingsreis van drie uur — terug naar je gevoelens, patronen en aanwezigheid. Precies hier. Precies nu.',
+        cta1: 'Reserveer je plek',
+        cta2: 'Ontmoet Reena'
+      },
+      about: {
+        eyebrow: 'Wie Ben Ik?',
+        p1: 'Drie jaar geleden stapte ik het onderwijs in en werkte ik als invalleerkracht op verschillende scholen in Den Haag, van groep 1 tot en met 8. Mijn nieuwsgierigheid naar beweging en psychologie groeide uit tot iets groters: workshops die kinderen, schoolteams en gezinnen dichter bij zichzelf en dichter bij elkaar brengen.',
+        p2: '<em class="font-display not-italic font-medium text-forestDeep">Move in Presence</em> is waar dat werk leeft voor volwassenen — speelse, ervaringsgerichte sessies die rust, focus en verbinding versterken, op de mat en ver daarna.'
+      },
+      mip: {
+        eyebrow: 'Het Flagship Workshop',
+        lead: 'Geen les. Geen therapie. Een begeleide terugkeer naar jezelf.',
+        body: 'In drie ongehaaste uren opent begeleide beweging ruimte om de gevoelens, patronen en gedragingen te ontdekken die dit moment in je leven vormgeven — geen ervaring nodig, alleen de bereidheid om er te zijn.',
+        dt: { duration: 'Duur', who: 'Voor wie', format: 'Vorm', exp: 'Ervaring nodig' },
+        dd: { duration: '3 uur, begeleid', who: 'Volwassenen, alle leeftijden', format: 'In-person, kleine groep', exp: 'Helemaal niet' },
+        cta: 'Vraag naar de volgende sessie'
+      },
+      kids: {
+        eyebrow: 'Voor Nieuwsgierige Geesten, 6–12 jaar',
+        heading: 'Workshops voor Kinderen',
+        intro: 'Hands-on sessies voor basisschoolkinderen, opgebouwd rond drie pijlers.',
+        art: { title: 'Kunst', sub: 'Creatief denken & maken', body: 'Kinderen ontdekken hun eigen beeldtaal en experimenteren vrij met materialen en technieken.' },
+        science: { title: 'Wetenschap & Technologie', sub: 'Onderzoeken, bouwen, experimenteren', body: 'Een hands-on kennismaking met de wonderlijke wereld van wetenschap en technologie.' },
+        philosophy: { title: 'Filosofie', sub: 'Grote vragen, jonge denkers', body: 'Kinderen leren redeneren, luisteren en hun eigen ideeën vormen en uitspreken met vertrouwen.' }
+      },
+      why: {
+        eyebrow: 'Waarom WildHearts & OpenMinds',
+        heading: 'Echte vaardigheden. Echte aanwezigheid. Zonder franje.',
+        body: 'Elke sessie is opgebouwd uit jaren in het onderwijs en een diep geloof dat beweging, nieuwsgierigheid en eerlijk gesprek kunnen veranderen hoe we verschijnen — voor onszelf, onze kinderen en elkaar.',
+        stat1: 'Leeftijd 6 tot 12', stat2: 'Engels & Nederlands', stat3: 'Den Haag & Verder'
+      },
+      contact: { heading: 'Laten We Praten', sub: 'We horen graag van je!', phone: 'Telefoonnummer', cta: 'Stuur een bericht' },
+      footer: { rights: 'Alle rechten voorbehouden.' }
+    }
+  };
+
+  /* ── helpers ── */
+  function get(obj, path) {
+    return path.split('.').reduce(function (o, k) { return o && o[k]; }, obj);
+  }
+
+  var currentLang = 'en';
+
+  function renderLanguage(lang) {
+    if (!content[lang]) return;
+    currentLang = lang;
+    document.documentElement.lang = lang === 'nl' ? 'nl' : 'en';
+
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var val = get(content[lang], el.dataset.i18n);
+      if (val !== undefined) el.textContent = val;
+    });
+
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      var val = get(content[lang], el.dataset.i18nHtml);
+      if (val !== undefined) el.innerHTML = val;
+    });
+
+    document.querySelectorAll('.lang-btn').forEach(function (btn) {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    document.title = lang === 'nl'
+      ? 'WildHearts & OpenMinds — Move in Presence Workshops & Kinderworkshops'
+      : 'WildHearts & OpenMinds — Move in Presence Workshops & Kids Programs';
+
+    /* Update mailto subject line */
+    var cta = document.getElementById('contactCta');
+    if (cta) {
+      cta.href = lang === 'nl'
+        ? 'mailto:wildheartsandopenminds@gmail.com?subject=Hallo%20WildHearts%20%26%20OpenMinds'
+        : 'mailto:wildheartsandopenminds@gmail.com?subject=Hello%20WildHearts%20%26%20OpenMinds';
+    }
+
+    try { localStorage.setItem('wh-lang', lang); } catch (e) {}
+  }
+
+  /* ── language toggle ── */
+  document.querySelectorAll('.lang-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      renderLanguage(btn.dataset.lang);
+    });
+  });
+
+  /* ── mobile menu ── */
+  var toggle = document.getElementById('menuToggle');
+  var panel = document.getElementById('mobilePanel');
+  var iconOpen = document.getElementById('menuIconOpen');
+  var iconClose = document.getElementById('menuIconClose');
+
+  function setOpen(open) {
+    var labels = content[currentLang].nav;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? labels.menuClose : labels.menuOpen);
+    panel.setAttribute('data-open', String(open));
+    iconOpen.classList.toggle('hidden', open);
+    iconClose.classList.toggle('hidden', !open);
+    if (open) { var first = panel.querySelector('a'); if (first) first.focus(); }
+  }
+
+  toggle.addEventListener('click', function () { setOpen(toggle.getAttribute('aria-expanded') !== 'true'); });
+  panel.addEventListener('click', function (e) { if (e.target.tagName === 'A') setOpen(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      setOpen(false); toggle.focus();
+    }
+  });
+
+  /* ── header scroll-swap ── */
+  var siteHeader = document.getElementById('siteHeader');
+  var hero = document.getElementById('home');
+  if ('IntersectionObserver' in window && hero) {
+    new IntersectionObserver(function (entries) {
+      siteHeader.classList.toggle('is-scrolled', entries[0].intersectionRatio < 0.6);
+    }, { threshold: [0, 0.6, 1] }).observe(hero);
+  } else {
+    siteHeader.classList.add('is-scrolled');
+  }
+
+  /* ── init ── */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var saved;
+  try { saved = localStorage.getItem('wh-lang'); } catch (e) {}
+  renderLanguage(saved === 'nl' ? 'nl' : 'en');
+})();
+</script>
+</body>
+</html>
