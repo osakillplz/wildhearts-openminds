@@ -185,8 +185,15 @@
 <main id="main">
 
   <!-- ===== HERO ===== -->
-  <section id="home" aria-labelledby="hero-heading" class="relative overflow-hidden bg-forestDeep text-creamSoft min-h-screen flex items-center">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(143,160,107,0.35),transparent_55%),radial-gradient(circle_at_85%_75%,rgba(122,58,24,0.30),transparent_50%),linear-gradient(160deg,#2C331C,#3B4527_60%,#2C331C)]"></div>
+  <section id="home" aria-labelledby="hero-heading" class="relative overflow-hidden text-creamSoft min-h-screen flex items-center">
+    <!-- Background photo -->
+    <div class="absolute inset-0">
+      <img src="compressed/reena-hero-bg.webp" alt="" aria-hidden="true" class="w-full h-full object-cover object-center" width="1920" height="1080" />
+    </div>
+    <!-- Dark overlay: solid left for text legibility, fades right -->
+    <div class="absolute inset-0 bg-[linear-gradient(100deg,rgba(44,51,28,0.93)_0%,rgba(44,51,28,0.78)_45%,rgba(44,51,28,0.45)_100%)]"></div>
+    <!-- Colour radial accents on top -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(143,160,107,0.25),transparent_55%),radial-gradient(circle_at_85%_75%,rgba(122,58,24,0.20),transparent_50%)]"></div>
     <div class="grain" aria-hidden="true" style="background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E&quot;)"></div>
 
     <svg class="circle-motif hidden md:block absolute -right-24 top-1/2 -translate-y-1/2 opacity-40" width="620" height="620" viewBox="0 0 620 620" fill="none" aria-hidden="true">
@@ -256,9 +263,39 @@
 
       <div class="grid md:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
         <div class="relative order-2 md:order-1">
-          <div class="relative rounded-[2rem] overflow-hidden shadow-[0_30px_55px_-18px_rgba(74,58,44,0.4),0_10px_25px_-10px_rgba(193,96,43,0.25)]">
-            <img src="compressed/reena-workshop.webp" alt="Move in Presence workshop session — guided movement in a group" class="w-full h-auto object-cover" width="1400" height="933" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-forestDeep/50 via-transparent to-transparent mix-blend-multiply"></div>
+          <!-- Gallery wrapper -->
+          <div class="relative rounded-[2rem] overflow-hidden shadow-[0_30px_55px_-18px_rgba(74,58,44,0.4),0_10px_25px_-10px_rgba(193,96,43,0.25)]" id="workshop-gallery">
+            <div class="relative w-full" style="aspect-ratio:3/2">
+              <img src="compressed/reena-workshop.webp" alt="Move in Presence — workshop moment" class="ws-slide absolute inset-0 w-full h-full object-cover" style="opacity:1;transition:opacity 0.65s ease" width="1400" height="933" loading="lazy" />
+              <img src="compressed/workshop-1.webp" alt="Move in Presence — workshop moment" class="ws-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 0.65s ease" width="1400" height="933" loading="lazy" />
+              <img src="compressed/workshop-2.webp" alt="Move in Presence — workshop moment" class="ws-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 0.65s ease" width="1400" height="933" loading="lazy" />
+              <img src="compressed/workshop-3.webp" alt="Move in Presence — workshop moment" class="ws-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 0.65s ease" width="1400" height="933" loading="lazy" />
+              <img src="compressed/workshop-8.webp" alt="Move in Presence — workshop moment" class="ws-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 0.65s ease" width="1400" height="933" loading="lazy" />
+              <img src="compressed/workshop-5.webp" alt="Move in Presence — workshop moment" class="ws-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 0.65s ease" width="1400" height="933" loading="lazy" />
+              <img src="compressed/workshop-4.webp" alt="Move in Presence — workshop moment" class="ws-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 0.65s ease" width="1400" height="933" loading="lazy" />
+              <img src="compressed/workshop-6.webp" alt="Move in Presence — workshop moment" class="ws-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity 0.65s ease" width="1400" height="933" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-forestDeep/50 via-transparent to-transparent mix-blend-multiply pointer-events-none"></div>
+              <!-- Arrows -->
+              <button id="ws-prev" aria-label="Vorig beeld" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full flex items-center justify-center bg-forestDeep/50 text-creamSoft hover:bg-forestDeep/80 backdrop-blur-sm" style="transition:background 0.2s">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="10 3 5 8 10 13"/></svg>
+              </button>
+              <button id="ws-next" aria-label="Volgend beeld" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full flex items-center justify-center bg-forestDeep/50 text-creamSoft hover:bg-forestDeep/80 backdrop-blur-sm" style="transition:background 0.2s">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 3 11 8 6 13"/></svg>
+              </button>
+              <!-- Counter -->
+              <span id="ws-counter" class="absolute bottom-4 right-5 font-body text-xs text-creamSoft/70 tabular-nums">1 / 8</span>
+            </div>
+          </div>
+          <!-- Dots -->
+          <div class="flex justify-center gap-2 mt-5" id="ws-dots">
+            <button class="ws-dot w-2 h-2 rounded-full bg-forestDark" style="opacity:1;transform:scale(1.25);transition:opacity 0.3s,transform 0.3s" data-i="0" aria-label="Beeld 1"></button>
+            <button class="ws-dot w-2 h-2 rounded-full bg-forestDark" style="opacity:0.3;transition:opacity 0.3s,transform 0.3s" data-i="1" aria-label="Beeld 2"></button>
+            <button class="ws-dot w-2 h-2 rounded-full bg-forestDark" style="opacity:0.3;transition:opacity 0.3s,transform 0.3s" data-i="2" aria-label="Beeld 3"></button>
+            <button class="ws-dot w-2 h-2 rounded-full bg-forestDark" style="opacity:0.3;transition:opacity 0.3s,transform 0.3s" data-i="3" aria-label="Beeld 4"></button>
+            <button class="ws-dot w-2 h-2 rounded-full bg-forestDark" style="opacity:0.3;transition:opacity 0.3s,transform 0.3s" data-i="4" aria-label="Beeld 5"></button>
+            <button class="ws-dot w-2 h-2 rounded-full bg-forestDark" style="opacity:0.3;transition:opacity 0.3s,transform 0.3s" data-i="5" aria-label="Beeld 6"></button>
+            <button class="ws-dot w-2 h-2 rounded-full bg-forestDark" style="opacity:0.3;transition:opacity 0.3s,transform 0.3s" data-i="6" aria-label="Beeld 7"></button>
+            <button class="ws-dot w-2 h-2 rounded-full bg-forestDark" style="opacity:0.3;transition:opacity 0.3s,transform 0.3s" data-i="7" aria-label="Beeld 8"></button>
           </div>
         </div>
 
@@ -399,8 +436,15 @@
     </div>
 
     <div class="flex flex-col items-center md:items-end gap-3 font-body text-sm">
-      <a href="mailto:wildheartsandopenminds@gmail.com" class="hover:text-creamSoft transition-colors duration-200">wildheartsandopenminds@gmail.com</a>
       <div class="flex items-center gap-3 text-xs uppercase tracking-wider">
+        <a href="https://www.instagram.com/wildheartsandopenminds?igsh=cmdyNHJjYml0Znhn" target="_blank" rel="noopener noreferrer" aria-label="WildHearts &amp; OpenMinds op Instagram" class="flex items-center gap-2 text-creamSoft/60 hover:text-creamSoft transition-colors duration-200 mr-1">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4.5"/>
+            <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none"/>
+          </svg>
+          <span class="font-body text-xs tracking-wide normal-case">↠•wịldhearts&amp;openmịnds•↞</span>
+        </a>
         <button class="lang-btn active px-2.5 py-1 rounded-full border border-creamSoft/30 text-creamSoft/80" data-lang="en" aria-label="Switch to English">EN</button>
         <button class="lang-btn px-2.5 py-1 rounded-full border border-creamSoft/30 text-creamSoft/80" data-lang="nl" aria-label="Schakel naar Nederlands">NL</button>
       </div>
@@ -580,6 +624,30 @@
   var saved;
   try { saved = localStorage.getItem('wh-lang'); } catch (e) {}
   renderLanguage(saved === 'nl' ? 'nl' : 'en');
+})();
+</script>
+
+<script>
+(function () {
+  var slides = Array.from(document.querySelectorAll('.ws-slide'));
+  var dots   = Array.from(document.querySelectorAll('.ws-dot'));
+  var counter = document.getElementById('ws-counter');
+  var current = 0;
+
+  function goTo(n) {
+    slides[current].style.opacity = '0';
+    dots[current].style.opacity   = '0.3';
+    dots[current].style.transform = 'scale(1)';
+    current = (n + slides.length) % slides.length;
+    slides[current].style.opacity = '1';
+    dots[current].style.opacity   = '1';
+    dots[current].style.transform = 'scale(1.25)';
+    counter.textContent = (current + 1) + ' / ' + slides.length;
+  }
+
+  document.getElementById('ws-prev').addEventListener('click', function () { goTo(current - 1); });
+  document.getElementById('ws-next').addEventListener('click', function () { goTo(current + 1); });
+  dots.forEach(function (d) { d.addEventListener('click', function () { goTo(+d.dataset.i); }); });
 })();
 </script>
 </body>
