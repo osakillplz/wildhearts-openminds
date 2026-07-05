@@ -1,0 +1,19 @@
+# Netlify-style headers file — apply these at the hosting/CDN layer.
+# A static HTML file cannot set real HTTP response headers itself;
+# whichever host serves this site (Netlify, Vercel, Cloudflare Pages, Apache, Nginx...)
+# needs to be configured to send these. This file works as-is on Netlify;
+# for other hosts, translate the same directives into their header config format.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://placehold.co; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+# Note: script-src/style-src need 'unsafe-inline' because this page loads
+# Tailwind via CDN (which injects styles at runtime) and uses inline <script>
+# blocks with no build step to generate nonces/hashes. If this site later
+# moves to a real build (Vite/Tailwind CLI) instead of the CDN script, the
+# CSP can be tightened by removing 'unsafe-inline' in favour of hashes/nonces.
