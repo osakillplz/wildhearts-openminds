@@ -1,0 +1,15 @@
+{
+  "name": "wildhearts-openminds",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WildHearts & OpenMinds landing page",
+  "type": "module",
+  "scripts": {
+    "serve": "node serve.mjs",
+    "screenshot": "node screenshot.mjs"
+  },
+  "devDependencies": {
+    "puppeteer": "^23.0.0",
+    "sharp": "^0.35.3"
+  }
+}
